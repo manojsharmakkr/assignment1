@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>ShopOnline</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="js.js"></script>      
+    </head>
+    <body>
+        <div class="main_page">
+            <div class="head_body">
+                <h1>Shop Online</h1>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./" title="Home">Home</a></li>                                                                            
+                        <li><a href="login.htm" title="Login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_body">
+                <p class="p_regis">To register a new account with ShopOnline, please complete the registration form below</p>                    
+                <fieldset class="user">
+                    <legend>Registration Detail</legend>
+                    <h4 class="required">* Required Field</h4>
+                    <div id="error"></div>      
+                    <form action="" method="post" onsubmit="return false;">
+                        <table>
+                            <tr>
+                                <td>First Name *</td>
+                                <td><input type="text" name="firstname" id="firtname"/></td>
+                            </tr>
+                            <tr>
+                                <td>Surname*</td>
+                                <td><input type="text" name="surname" id="surname"/></td>
+                            </tr>
+                            <tr>
+                                <td>Email *</td>
+                                <td><input type="email" name="email" id="email"/></td>
+                            </tr>                           
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" value="Register" onclick="register()"/>
+                                    <input type="reset" value="Reset"/>
+                                </td>
+                            </tr>
+                        </table>     
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </body>
+</html>

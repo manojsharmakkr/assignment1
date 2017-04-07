@@ -1,0 +1,45 @@
+<?php
+session_start();
+?>
+<html>
+    <head>
+        <title>ShopOnline</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="js.js"></script>    
+        <script type="text/javascript">
+            if (sessionStorage.username != 'loged') {
+                location.href = "index.php";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main_page">
+            <div class="head_body">
+                <h1>Shop Online</h1>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./" title="Home">Home</a></li>
+                        <li><a href="listing.htm" title="Listing">Listing</a></li>                        
+                        <li><a title="Bidding" href="bidding.htm">Bidding</a></li>                        
+                        <li><a title="Maintenance" href="maintenance.htm">Maintenance</a></li>    
+                        <li><a href="logout.php" title="Log Out">Log Out</a></li>                       
+                    </ul>
+                </div>
+                <hr/>
+            </div>
+            <div class="main_body">
+                <div class="maintance">
+                    <a onclick="maintaince('process')" href="javascript:void(0)">Process Auction Items</a>
+                    <a onclick="maintaince('generate')" href="javascript:void(0)">Generate Report</a>
+                </div>
+                <div id="process">
+
+                </div>
+                <div id="generate">
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

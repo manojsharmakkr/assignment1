@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>ShopOnline</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="js.js"></script>       
+        <script type="text/javascript">
+            if (sessionStorage.username != 'loged') {
+                location.href = "index.php";
+            }
+        </script>
+    </head>
+    <body onload="onloadBidding()">
+        <div class="main_page">
+            <div class="head_body">
+                <h1>Shop Online</h1>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./" title="Home">Home</a></li>
+                        <li><a href="listing.htm" title="Listing">Listing</a></li>                        
+                        <li><a title="Bidding" href="bidding.htm">Bidding</a></li>                        
+                        <li><a title="Maintenance" href="maintenance.htm">Maintenance</a></li>    
+                        <li><a href="logout.php" title="Log Out">Log Out</a></li>                       
+                    </ul>
+                </div>
+                <hr/>
+            </div>
+            <div class="main_body">
+                <p class="p_regis">Current auction items are listed below. To place a bid for an item, use the Place Bid button.<br/>
+                    <strong>NOTE: </strong> Item remaining time and bid prices are updated every 5 seconds.
+                </p> 
+                <div id="showitem">                    
+                </div>
+            </div>
+        </div>
+        <div id="popup" style="display: none">
+            <a href="javascript:void(0)" onclick="closePopup()" title="Close" style=" text-decoration: none;position: absolute;right: 0">Close</a>
+            <br/>
+            <form action="" method="post" onsubmit="return false;">
+                <table>
+                    <tr>
+                        <td>Bid Price*</td>
+                        <td><input type="text" name="bid_price" id="bid_price"/></td>
+                    </tr>        
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Bid" onclick="BidItem()" />                   
+                        </td>
+                    </tr>
+                </table>                    
+                <input type="hidden" name="id" id="bid_id"/>
+            </form>
+        </div>
+        <div id="overlay" style="display: none">            
+        </div>
+    </body>
+
+</html>

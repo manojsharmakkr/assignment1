@@ -1,0 +1,28 @@
+/*Set body background */
+body{background:#eee }
+/*Wraper section*/
+.main_page{width: 900px; margin: 0 auto}
+/*H1: SHOP ONLINE*/
+h1{text-align: center;color: #4d7aa7}
+/* Main menu*/
+.menu ul li {display: inline-block; min-width: 145px;padding-right: 50px;border-radius: 5px;border: 1px solid #000;background: #cecece;text-align: center;padding: 5px;margin-right: 5px;font-weight: bold;}
+.menu ul li a{color: #4d7aa7}
+/*Field set*/
+fieldset.user{background: #e3edf9}
+fieldset.user label{width: 200px;}
+fieldset{margin-bottom: 20px;}
+fieldset.user form{width: 400px; margin: 0 auto;margin-bottom: 20px;}
+/* p tag in field set*/
+.p_regis{text-align: center}
+/*Style with error class*/
+.required{color: #ff0000}
+/*Style place bid abd buy it now*/
+a.place_bid{width: 100px;height: 20px;padding: 5px;background: blue; color: #fff;text-decoration: none;}
+a.buyit_now{width: 100px;height: 20px;padding: 5px;background: green;color: #fff;text-decoration: none;}
+/*Maintance content statistics*/
+.maintance{width: 400px;margin: 0 auto;margin-top: 20px;height: 100px;}
+.maintance a{width: 100px;height: 30px;padding: 10px;background: blue;color: #fff;text-decoration: none;border-radius: 5px;}
+#process,#generate{display: none}
+/*Popup area*/
+#popup{position: absolute;background: #cecece;left: 50%;top: 40%;z-index: 1001;margin-left:-100px}
+#overlay{position: fixed;background: #00232D;width: 4000px;height: 4000px;top: 0px;left: 0px;z-index: 1000;opacity: 0.5;filter: alpha(opacity=50);}
